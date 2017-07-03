@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Home Page</title>
+<style>
+body { 
+    background-image: url('images/bgimg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+</style>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styleHome.css">
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/jsscript.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>Do You have The Right Name?</h1>
+	<h2>Don't worry! We will check it for you!!</h2><br>
+	<center>
+	<form id="userDetails" action="https://github.com/hariharan2394/Numerology-Calculator/blob/master/result.html" onsubmit="return store(this)">
+	<p id="formHead">Enter your details here:</p>
+	<center>
+		<p id="errorFirst" class="error"></p>
+		<input class="inpField" type="text" id="first" name="firstName" placeholder="First Name"/><br/><br/>
+		<p id="errorLast" class="error"></p>
+		<input class="inpField" type="text" id="last" name="lastName" placeholder="Last Name"/><br/><br/>
+		<p id="errorDob" class="error"></p>
+		<label>Date Of Birth:</label><br/>
+ 	    <input class="inpField" type="date" id="dob" name="bday"><br/><br/>
+ 	    <input type="Submit" name="submitButton" onclick="store()">
+	</center>
+	</form>
+	</center>
+</body>
+<footer>
+  <p id="foot">Created By:<br> Hariharan.M.B.S</p>
+  <a href="https://www.facebook.com/mbshariharan" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/hariharanmbsnov" class="fa fa-twitter"></a>
+</footer>
+</html>
