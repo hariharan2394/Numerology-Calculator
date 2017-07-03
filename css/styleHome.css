@@ -39,7 +39,7 @@ label{
 	font-size: 15px;
 }
 .inpField{
-	width:250px; 
+	width:auto; 
 }
 .error{
 	font-family: "Calibri";
