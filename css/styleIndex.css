@@ -15,7 +15,7 @@ h2{
 	text-align: center;
 }
 #userDetails {
-    width: 30%;
+    width: 50%;
     height: auto;
     padding: 20px;
     box-sizing: border-box;
@@ -69,9 +69,9 @@ label{
     background: #3B5998;
     color: white;
     position: absolute;
-    left: 10px;
+    left: 5px;
     right: 10px;
-    bottom: 20px;
+    bottom: 70px;
 }
 
 /* Twitter */
@@ -79,9 +79,9 @@ label{
     background: #55ACEE;
     color: white;
     position: absolute;
-    left: 100px;
+    left: 5px;
     right: 10px;
-    bottom: 20px;
+    bottom: 5px;
 }
 #foot1{
 	font-family: "Cooper Black";
@@ -90,7 +90,7 @@ label{
 	font-size: 20px;
 	position: absolute;
 	left: 0;
-    bottom: 80px;
+    bottom: 130px;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 #foot2{
