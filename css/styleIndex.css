@@ -34,7 +34,6 @@ h2{
 }
 label{
 	font-family: "Calibri";
-	text-align: left;
 	color: white;
 	font-size: 15px;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -84,20 +83,20 @@ label{
     bottom: 5px;
 }
 #foot1{
-	font-family: "Cooper Black";
+	font-family: "Calibri";
 	font-weight: bold;
 	color: white;
-	font-size: 20px;
+	font-size: 15px;
 	position: absolute;
-	left: 0;
+	left: 5px;
     bottom: 130px;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 #foot2{
-	font-family: "Cooper Black";
+	font-family: "Calibri";
 	font-weight: bold;
 	color: white;
-	font-size: 20px;
+	font-size: 10px;
 	position: fixed; 
 	bottom:0; 
 	right: 0;
