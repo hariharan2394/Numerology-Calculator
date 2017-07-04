@@ -10,13 +10,13 @@ h2{
 	text-align: center;
 }
 #displayDiv{
-	width: 40%;
+	width: 60%;
     height: 30%;
     padding: 5px 5px 5px 5px;
     box-sizing: border-box;
     border:0.25px solid grey;
     box-shadow:10px 10px 20px black;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.6);
     resize: none;
 }
 .dispLabel{
@@ -66,9 +66,9 @@ h2{
 #linkDesc{
 	font-family: "Cooper Black";
 	font-weight: bold;
-	color: #FF00FF;
+	color: #C71585;
 	font-size: 20px;
-	text-align: left;
+	text-align: justify-all;
 }
 .links{
 	font-family: "Arial Rounded MT Bold";
