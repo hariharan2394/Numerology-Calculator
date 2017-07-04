@@ -13,7 +13,7 @@ body {
 }
 </style>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/styleHome.css">
+<link rel="stylesheet" href="css/styleIndex.css">
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/jsscript.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,24 +22,25 @@ body {
 	<h1>Do You have The Right Name?</h1>
 	<h2>Don't worry! We will check it for you!!</h2><br>
 	<center>
-	<form id="userDetails" action="https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/c78b0815/result.html" onsubmit="return store(this)">
-	<p id="formHead">Enter your details here:</p>
+	<form id="userDetails" action="https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/6eb520bf/result.html" onsubmit="return store(this)">
+	<p id="formHead">Enter your details here:</p><br/>
 	<center>
 		<p id="errorFirst" class="error"></p>
-		<input class="inpField" type="text" id="first" name="firstName" placeholder="First Name"/><br/><br/>
+		<input class="form-control" type="text" id="first" name="firstName" placeholder="First Name"/><br/>
 		<p id="errorLast" class="error"></p>
-		<input class="inpField" type="text" id="last" name="lastName" placeholder="Last Name"/><br/><br/>
+		<input class="form-control" type="text" id="last" name="lastName" placeholder="Last Name"/><br/>
 		<p id="errorDob" class="error"></p>
 		<label>Date Of Birth:</label><br/>
- 	    <input class="inpField" type="date" id="dob" name="bday"><br/><br/>
- 	    <input type="Submit" name="submitButton" onclick="store()">
+ 	    <input class="form-control" type="date" id="dob" name="bday"><br/>
+ 	    <input type="Submit" class="btn btn-success" name="submitButton" onclick="store()">
 	</center>
 	</form>
 	</center>
 </body>
 <footer>
-  <p id="foot">Created By:<br> Hariharan.M.B.S</p>
-  <a href="https://www.facebook.com/mbshariharan" class="fa fa-facebook"></a>
-  <a href="https://twitter.com/hariharanmbsnov" class="fa fa-twitter"></a>
+	<p id="foot1">Follow Me:</p>
+    <a href="https://www.facebook.com/mbshariharan" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/hariharanmbsnov" class="fa fa-twitter"></a>
+    <p id="foot2">Created By:<br> Hariharan.M.B.S</p>
 </footer>
 </html>
