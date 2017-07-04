@@ -15,7 +15,7 @@ h2{
 	text-align: center;
 }
 #userDetails {
-    width: 50%;
+    width: 30%;
     height: auto;
     padding: 20px;
     box-sizing: border-box;
@@ -37,9 +37,10 @@ label{
 	text-align: left;
 	color: white;
 	font-size: 15px;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 .inpField{
-	width:250px; 
+	width:auto; 
 }
 .error{
 	font-family: "Calibri";
@@ -67,21 +68,38 @@ label{
 .fa-facebook {
     background: #3B5998;
     color: white;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 20px;
 }
 
 /* Twitter */
 .fa-twitter {
     background: #55ACEE;
     color: white;
+    position: absolute;
+    left: 100px;
+    right: 10px;
+    bottom: 20px;
 }
-#foot{
+#foot1{
+	font-family: "Cooper Black";
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+    bottom: 80px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#foot2{
 	font-family: "Cooper Black";
 	font-weight: bold;
 	color: white;
 	font-size: 20px;
 	position: fixed; 
-	width:100%; 
 	bottom:0; 
-	text-align: right;
-	background-color: rgba(0, 0, 0, 0.6);
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
 }
