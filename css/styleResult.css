@@ -56,6 +56,13 @@ h2{
 	font-size: 25px;
 	background-color: rgba(0, 0, 0, 0.2);
 }
+#dispResultMod{
+	font-family: "Cooper Black";
+	font-weight: bold;
+	color:#0000CD;
+	font-size: 25px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
 #linkDesc{
 	font-family: "Cooper Black";
 	font-weight: bold;
