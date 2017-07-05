@@ -22,7 +22,7 @@ body {
 	<h1>Do You have The Right Name?</h1>
 	<h2>Don't worry! We will check it for you!!</h2><br>
 	<center>
-	<form id="userDetails" action="https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/82903fd0/result.html" onsubmit="return store(this)">
+	<form id="userDetails" action="https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/8a663032/result.html" onsubmit="return store(this)">
 	<p id="formHead">Enter your details here:</p><br/>
 	<center>
 		<p id="errorFirst" class="error"></p>
@@ -31,8 +31,9 @@ body {
 		<input class="form-control" type="text" id="last" name="lastName" placeholder="Last Name"/><br/>
 		<p id="errorDob" class="error"></p>
 		<label>Date Of Birth:</label><br/>
- 	    <input class="form-control" type="date" id="dob" name="bday"><br/>
- 	    <input type="Submit" class="btn btn-success" name="submitButton" onclick="store()">
+ 	    <input class="form-control" type="date" format="dd/MM/yyyy" id="dob" name="bday"><br/>
+ 	    <input type="Reset" class="btn btn-danger custom" name="clearButton">
+ 	    <input type="Submit" class="btn btn-success custom" name="submitButton" onclick="store()">
 	</center>
 	</form>
 	</center>
