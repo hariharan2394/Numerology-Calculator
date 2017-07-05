@@ -15,7 +15,7 @@ h2{
 	text-align: center;
 }
 #userDetails {
-    width: 25%;
+    width: 50%;
     height: auto;
     padding: 20px;
     box-sizing: border-box;
@@ -71,7 +71,7 @@ label{
     background: #3B5998;
     color: white;
     position: absolute;
-    left: 20px;
+    left: 5px;
     right: 10px;
     bottom: 70px;
 }
@@ -81,25 +81,25 @@ label{
     background: #55ACEE;
     color: white;
     position: absolute;
-    left: 20px;
+    left: 5px;
     right: 10px;
     bottom: 5px;
 }
 #foot1{
-	font-family: "Cooper Black";
+	font-family: "Calibri";
 	font-weight: bold;
 	color: white;
-	font-size: 17px;
+	font-size: 15px;
 	position: absolute;
 	left: 5px;
     bottom: 130px;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 #foot2{
-	font-family: "Cooper Black";
+	font-family: "Calibri";
 	font-weight: bold;
 	color: white;
-	font-size: 20px;
+	font-size: 10px;
 	position: fixed; 
 	bottom:0; 
 	right: 0;
