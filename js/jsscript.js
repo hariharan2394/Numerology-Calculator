@@ -48,7 +48,6 @@ function get(){
 	
 	document.getElementById('dispFirstName').innerHTML=first;
 	document.getElementById('dispLastName').innerHTML=last;
-	document.getElementById('dispDob').innerHTML=dob;
 
 	var name=first.concat(last);
 	var finalName=name.replace(/[\W_]/g,"");
@@ -118,6 +117,7 @@ function get(){
 	document.getElementById('dispNameNo').innerHTML=nameSum;
 
 	var dobArray=dob.split("-");
+	document.getElementById('dispDob').innerHTML=dobArray[2]+' / '+dobArray[1]+' / '+dobArray[0];
 	
 	var dobDateArray=dobArray[2].toString().split("").map(function(t){return parseInt(t)});
 	var dobDateSum=0;
