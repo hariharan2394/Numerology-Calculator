@@ -13,27 +13,40 @@ body {
 }
 </style>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/styleIndex.css">
-<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/jsscript.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styleIndex.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script src="js/validator.js"></script>
+	<script src="js/jsscript.js"></script>
 </head>
 <body>
 	<h1>Do You have The Right Name?</h1>
+
+	<div id="popup" class="popup-position">
+	<div id="popup-wrapper">
+		<div id="popup-container">
+		<p>Do you Have The Right Name as per Numerology? <br/> This Site checks whether your Name is compatible with your Date of Birth according to Numerology.<br/>1. If your name is "Perfectly Acceptable", no need of any changes in your name<br/>2. If your name is "Moderately Acceptable", then its better to change your name according to Numerology<br/>4. If your name is "Incorrect", it is stronmgly recomended to change your Name</p>
+		<p><a id="closeLink" href="javascript:void(0)" onclick="toggle_visibility('popup')";>Close(X)</a></p>
+	</div>
+  </div>
+</div>
+
+	<div id="wrapper">
+		<p id="help"><a id="helpLink" href="javascript:void(0)" onclick="toggle_visibility('popup')";>Help?</a></p><br/>
+	</div>
+
 	<h2>Don't worry! We will check it for you!!</h2><br>
 	<center>
-	<form id="userDetails" action="https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/7a40a8ea/result.html" onsubmit="return store(this)">
+	<form id="userDetails" action="https://cdn.rawgit.com/hariharan2394/Numerology-Calculator/4ef3e899/result.html">
 	<p id="formHead">Enter your details here:</p><br/>
 	<center>
-		<p id="errorFirst" class="error"></p>
-		<input class="form-control" type="text" id="first" name="firstName" placeholder="First Name"/><br/>
-		<p id="errorLast" class="error"></p>
-		<input class="form-control" type="text" id="last" name="lastName" placeholder="Last Name"/><br/>
-		<p id="errorDob" class="error"></p>
-		<label>Date Of Birth:</label><br/>
- 	    <input class="form-control" type="date" format="dd/MM/yyyy" id="dob" name="bday"><br/>
+		<input class="form-control" type="text" id="first" name="firstName" style="text-align:center" placeholder="First Name"/><br/>
+		<input class="form-control" type="text" id="last" name="lastName" style="text-align:center" placeholder="Last Name"/><br/>
+ 	    <input class="form-control" type="text" onfocus="(this.type='date')"  id="dob" name="bday" style="text-align:center" placeholder="--Date of Birth--" ><br/> 
  	    <input type="Reset" class="btn btn-danger custom" name="clearButton">
- 	    <input type="Submit" class="btn btn-success custom" name="submitButton" onclick="store()">
+ 	    <input type="Submit" class="btn btn-success custom" name="submitButton">
 	</center>
 	</form>
 	</center>
