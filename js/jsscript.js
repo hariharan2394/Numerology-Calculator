@@ -1,5 +1,8 @@
 $(function(){
      // initialize tooltipster on text input elements
+
+    
+
     $('#userDetails input[type="text"], input[type="date"]').tooltipster({
         trigger: 'custom',
         onlyOne: false,
@@ -8,7 +11,8 @@ $(function(){
 
 jQuery.validator.addMethod("lettersDotSpaceonly", function(value, element) {
   return this.optional(element) || /^[a-z." "]+$/i.test(value);
-},);
+},"Only Allowed: Alphabets | Dot | Space");
+
     $("#userDetails").validate({
         errorPlacement: function (error, element) {
             $(element).tooltipster('update', $(error).text());
@@ -32,12 +36,10 @@ jQuery.validator.addMethod("lettersDotSpaceonly", function(value, element) {
         },
         messages:{
         firstName:{
-        required: "Enter your First Name",
-        lettersDotSpaceonly:"Only Allowed: Alphabets | Dot | Space"
+        required: "Enter your First Name"
         },
         lastName:{
-        required: "Enter your Last Name",
-        lettersDotSpaceonly:"Only Allowed: Alphabets | Dot | Space"
+        required: "Enter your Last Name"
         },
         bday:{
             required: "Enter your DOB"
