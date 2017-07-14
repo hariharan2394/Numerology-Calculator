@@ -1,8 +1,5 @@
 $(function(){
      // initialize tooltipster on text input elements
-
-    
-
     $('#userDetails input[type="text"], input[type="date"]').tooltipster({
         trigger: 'custom',
         onlyOne: false,
@@ -12,6 +9,12 @@ $(function(){
 jQuery.validator.addMethod("lettersDotSpaceonly", function(value, element) {
   return this.optional(element) || /^[a-z." "]+$/i.test(value);
 },"Only Allowed: Alphabets | Dot | Space");
+jQuery.validator.addMethod("NoSpaceOnly", function(value, element) {
+  return this.optional(element) ||value.replace(/^\s+/, '');;
+},"Spaces are invalid Input");
+jQuery.validator.addMethod("OneSpaceonly", function(value, element) {
+  return this.optional(element) || /^(\w+\.)*(\w+\s)*\w+$/i.test(value);
+},"Only One Space | Dot Allowed Only Between Names");
 
     $("#userDetails").validate({
         errorPlacement: function (error, element) {
@@ -24,11 +27,15 @@ jQuery.validator.addMethod("lettersDotSpaceonly", function(value, element) {
         rules: {
             firstName: {
                 required: true,
-                lettersDotSpaceonly: true
+                lettersDotSpaceonly: true,
+                NoSpaceOnly:true,
+                OneSpaceonly:true
             },
             lastName: {
                 required: true,
-                lettersDotSpaceonly: true
+                lettersDotSpaceonly: true,
+                NoSpaceOnly:true,
+                OneSpaceonly:true
             },
             bday: {
                 required: true,
