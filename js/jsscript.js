@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
      // initialize tooltipster on text input elements
     $('#userDetails input[type="text"], input[type="date"]').tooltipster({
         trigger: 'custom',
