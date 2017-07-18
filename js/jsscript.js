@@ -3,7 +3,8 @@ $(function(){
     $('#userDetails input[type="text"], input[type="date"]').tooltipster({
         trigger: 'custom',
         onlyOne: false,
-        position: 'top'
+        position: 'top',
+        content:"Input Please"
     });
 
 jQuery.validator.addMethod("lettersDotSpaceonly", function(value, element) {
@@ -244,3 +245,17 @@ function getLength(number){
        else
           e.style.display = 'block';
   }
+
+  var myVar;
+
+function delayFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+function chooseFile() {
+      $("#fileInput").click();
+   }
