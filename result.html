@@ -6,19 +6,30 @@
 <title>Result Page</title>
 <style>
 body { 
-    background-image: url('images/bgimg4.jpg');
+    background-image: url('images/bgimg1.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+    background-size: cover;
 }
 </style>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/styleResult.css">
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/jsscript.js"></script>
+<script type="text/javascript">
+function readURL(event){
+         var getImagePath = URL.createObjectURL(event.target.files[0]);
+         $("body").css('background-image', 'url(' + getImagePath + ')');
+        }
+</script>
 </head>
-<body onload="get()">
+<body onload="delayFunction(); get();">
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
 	<h1>We analysed your details!</h1>
+	<label for="getval" class="bgButton2">Choose Background</label>
+	<input type='file' id='getval' name="background-image" style="visibility:hidden;padding:0px;margin: 0px" onchange="readURL(event)" />
 	<center>
 	<div id="displayDiv">
 	<p class="dispLabel">First Name: </p><p id="dispFirstName" class="disp"></p>
@@ -47,5 +58,6 @@ body {
 	<a href="http://www.astrojyoti.com/sankhyasastranumber9.htm" class="links"> 9 </a>
 	</div>
 	</center>
+</div>
 </body>
 </html>
